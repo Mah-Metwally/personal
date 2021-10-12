@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    background-color: black;
+}
+
+.myHero-container {
+    background-color: #e87722;
+}
+
+
+.myHero {
+    font-family: 'Raleway', sans-serif;
+}
+
+.myHero p {
+    color: #8b9c9f;
+}
+
+.myHero button {
+    position: absolute;
+    top: 99%;
+    right: 10px;
+    z-index: 100;
+}
+
+.myHero button i {
+    color: white;
+    font-size: 2rem;
+}
+
+.myNavbar {
+    display: none;
+    width: 0;
+    margin-left: auto;
+}
+
+.myNavbar .navbar-brand {
+    display: none;
+    font-family: 'Raleway', sans-serif;
+    color: #8b9c9f;
+    transition: 0.2s;
+}
+
+.myNavbar .navbar-nav {
+    width: 50%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.myNavbar .navbar-nav .nav-link.active {
+    color: #e87722;
+    /* color: #d1f6ff; */
+}
+
+.myNavbar .navbar-nav .nav-link:not(.active) {
+    /* color: #343434; */
+    color: white;
+}
+
+.myNavbar .navbar-nav .nav-link:not(.active):hover {
+    /* color: rgb(116, 113, 113); */
+    /* color: #d1f6ff; */
+    color: #e87722;
+}
+
+.myContent {
+    margin: 3rem 1.5rem 0;
+    background-color: black;
+}
+
+.myContent .card {
+    background-color: transparent;
+}
+
+.myContent .card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 50vh; */
+}
+
+.myContent .card .card-body .myText {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.myContent .myText p span {
+    font-size: 3rem;
+    color: #e87722;
+}
+
+.myContent .card-body a.myAboutBtn {
+    width: 150px;
+    background-color: #e87722;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    display: block;
+}
+
+.myContent .card-body a.myAboutBtn:hover {
+    background-color: #ac4d05;
+}
+
+@media (max-width: 991.98px) {
+    .myHero p {
+        font-size: 2.5rem;
+    }
+
+    .myContent {
+        margin: 3rem 5rem 0;
+    }
+
+    .myContent .card .card-body .myText {
+        width: 85%;
+        margin-top: 2rem;
+    }
+
+    .myNavbar .navbar-nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .myContent {
+        margin: 5rem 1.5rem 0;
+    }
+}
