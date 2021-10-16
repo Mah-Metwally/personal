@@ -109,6 +109,14 @@ body {
     background-color: #ac4d05;
 }
 
+.myContent .myCard-bg {
+    background-color: #ac4d05;
+}
+
+.myContent .myCard-width {
+    width: 80%;
+}
+
 @media (max-width: 991.98px) {
     .myHero p {
         font-size: 2.5rem;
